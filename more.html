@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More - Kakao Clone</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <span>No Service</span>
+          <span>⌁</span>
+        </div>
+        <div class="status-bar__column">21:23</div>
+        <div class="status-bar__column">
+          <span>◉</span>
+          <span>100%</span>
+          <span class="status-bar__battery"></span>
+        </div>
+      </div>
+
+      <header class="screen-header">
+        <h1 class="screen-header__title">More</h1>
+        <div class="screen-header__icons" aria-label="More actions">
+          <a href="find.html" aria-label="Search">⌕</a>
+          <span aria-hidden="true">♫</span>
+          <a
+            class="screen-header__icon-wrap"
+            href="settings.html"
+            aria-label="Settings"
+          >
+            ⚙
+            <span class="badge badge--tiny screen-header__dot"></span>
+          </a>
+        </div>
+      </header>
+
+      <main class="main-screen more-screen">
+        <section class="user-component more-profile" aria-label="Profile summary">
+          <div class="user-component__column">
+            <div class="avatar" aria-hidden="true"></div>
+            <div class="user-component__text">
+              <h2 class="user-component__title">Pilsu Kim</h2>
+              <p class="user-component__subtitle">
+                +1 787-493-4219
+                <span class="more-profile__warning">!</span>
+              </p>
+            </div>
+          </div>
+          <a class="more-profile__bubble" href="chat.html" aria-label="Open my chat">
+            ▣
+          </a>
+        </section>
+
+        <section class="more-icons" aria-label="More services">
+          <a class="more-icons__item" href="#">
+            <span class="more-icons__symbol">▣</span>
+            <span>Calendar</span>
+          </a>
+          <a class="more-icons__item" href="#">
+            <span class="more-icons__symbol">▤</span>
+            <span>Talk Drive</span>
+            <span class="badge badge--tiny more-icons__dot"></span>
+          </a>
+          <a class="more-icons__item" href="#">
+            <span class="more-icons__symbol">☺</span>
+            <span>Emoticons</span>
+          </a>
+          <a class="more-icons__item" href="#">
+            <span class="more-icons__symbol">♙</span>
+            <span>Themes</span>
+          </a>
+          <a class="more-icons__item" href="#">
+            <span class="more-icons__symbol">⚭</span>
+            <span>Account</span>
+          </a>
+          <a class="more-icons__item" href="#">
+            <span class="more-icons__symbol">♡</span>
+            <span>Openchat</span>
+          </a>
+        </section>
+
+        <section class="suggestions" aria-label="Suggestions">
+          <h2 class="suggestions__title">Suggestions</h2>
+          <div class="suggestions__icons">
+            <a class="suggestion" href="#">
+              <span class="suggestion__image">↯</span>
+              <span>Kakao Story</span>
+            </a>
+            <a class="suggestion" href="#">
+              <span class="suggestion__image suggestion__image--friend">ʕ•</span>
+              <span>kakao friends</span>
+            </a>
+            <a class="suggestion" href="#">
+              <span class="suggestion__image suggestion__image--gem">🐯</span>
+              <span>Friends Gem</span>
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <nav class="nav" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li>
+            <a class="nav__link" href="friends.html" aria-label="Friends">♙</a>
+          </li>
+          <li>
+            <a class="nav__link" href="chats.html" aria-label="Chats">
+              ♡
+              <span class="badge nav__notification">1</span>
+            </a>
+          </li>
+          <li>
+            <a class="nav__link" href="find.html" aria-label="Find">⌕</a>
+          </li>
+          <li>
+            <a
+              class="nav__link nav__link--active"
+              href="more.html"
+              aria-label="More"
+            >
+              •••
+              <span class="badge badge--tiny nav__dot"></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>

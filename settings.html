@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings - Kakao Clone</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <span>No Service</span>
+          <span>⌁</span>
+        </div>
+        <div class="status-bar__column">21:23</div>
+        <div class="status-bar__column">
+          <span>◉</span>
+          <span>100%</span>
+          <span class="status-bar__battery"></span>
+        </div>
+      </div>
+
+      <header class="alt-header">
+        <div class="alt-header__left">
+          <a href="more.html" aria-label="Go back">‹</a>
+        </div>
+        <h1 class="alt-header__title">Settings</h1>
+        <div class="alt-header__right">
+          <a href="find.html" aria-label="Search">⌕</a>
+        </div>
+      </header>
+
+      <main class="settings-screen">
+        <section class="settings-list" aria-label="Basic settings">
+          <a class="settings-row" href="#">
+            <span class="settings-row__column">
+              <span class="settings-row__icon">♧</span>
+              <span>Notices</span>
+            </span>
+          </a>
+          <a class="settings-row" href="#">
+            <span class="settings-row__column">
+              <span class="settings-row__icon">♜</span>
+              <span>Kakao Lab</span>
+            </span>
+          </a>
+          <a class="settings-row" href="#">
+            <span class="settings-row__column">
+              <span class="settings-row__icon">ⓘ</span>
+              <span>Version</span>
+            </span>
+            <span class="settings-row__meta">Latest Version</span>
+          </a>
+        </section>
+
+        <section class="settings-list" aria-label="Account settings">
+          <a class="settings-row" href="#">
+            <span class="settings-row__column">
+              <span class="settings-row__icon">♙</span>
+              <span>Privacy</span>
+            </span>
+          </a>
+          <a class="settings-row" href="#">
+            <span class="settings-row__column">
+              <span class="settings-row__icon">♧</span>
+              <span>Notifications</span>
+            </span>
+          </a>
+          <a class="settings-row" href="#">
+            <span class="settings-row__column">
+              <span class="settings-row__icon">♙</span>
+              <span>Friends</span>
+            </span>
+          </a>
+          <a class="settings-row" href="#">
+            <span class="settings-row__column">
+              <span class="settings-row__icon">♡</span>
+              <span>Chats</span>
+            </span>
+          </a>
+          <a class="settings-row" href="#">
+            <span class="settings-row__column">
+              <span class="settings-row__icon">☼</span>
+              <span>Display</span>
+              <span class="settings-row__new">N</span>
+            </span>
+          </a>
+          <a class="settings-row" href="#">
+            <span class="settings-row__column">
+              <span class="settings-row__icon">♙</span>
+              <span>Themes</span>
+              <span class="settings-row__new">N</span>
+            </span>
+            <span class="settings-row__meta">Default theme</span>
+          </a>
+          <a class="settings-row" href="#">
+            <span class="settings-row__column">
+              <span class="settings-row__icon">⌕</span>
+              <span>Call</span>
+            </span>
+          </a>
+        </section>
+      </main>
+
+      <nav class="nav" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li>
+            <a class="nav__link" href="friends.html" aria-label="Friends">♙</a>
+          </li>
+          <li>
+            <a class="nav__link" href="chats.html" aria-label="Chats">
+              ♡
+              <span class="badge nav__notification">1</span>
+            </a>
+          </li>
+          <li>
+            <a class="nav__link" href="find.html" aria-label="Find">⌕</a>
+          </li>
+          <li>
+            <a
+              class="nav__link nav__link--active"
+              href="more.html"
+              aria-label="More"
+            >
+              •••
+              <span class="badge badge--tiny nav__dot"></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>

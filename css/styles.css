@@ -1,0 +1,159 @@
+@import url("reset.css");
+@import url("variables.css");
+@import url("components/status-bar.css");
+@import url("components/screen-header.css");
+@import url("components/nav-bar.css");
+@import url("components/user-component.css");
+@import url("screens/login.css");
+@import url("screens/friends.css");
+@import url("screens/chats.css");
+@import url("screens/chat.css");
+@import url("screens/find.css");
+@import url("screens/more.css");
+@import url("screens/settings.css");
+
+html {
+  background: #eef1f4;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--black);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+}
+
+.app {
+  width: min(100%, var(--app-width));
+  min-height: 100vh;
+  margin: 0 auto;
+  background: #ffffff;
+  position: relative;
+  overflow-x: hidden;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+}
+
+.app--yellow {
+  background: var(--yellow);
+}
+
+.main-screen {
+  padding: 0 var(--screen-side-space) calc(var(--nav-height) + 22px);
+}
+
+.badge {
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: var(--orange);
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.badge--tiny {
+  min-width: 6px;
+  width: 6px;
+  height: 6px;
+  padding: 0;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.muted {
+  color: var(--gray-500);
+}
+
+.avatar {
+  flex: 0 0 auto;
+  width: 66px;
+  height: 66px;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  background: radial-gradient(circle at 35% 30%, #ffe2b3 0 12%, transparent 13%),
+    radial-gradient(circle at 63% 33%, #ffd2a1 0 10%, transparent 11%),
+    linear-gradient(135deg, #4955f4, #26c6da 55%, #7a3cff);
+  position: relative;
+  overflow: hidden;
+}
+
+.avatar::after {
+  content: "PK";
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.24);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 -8px 18px rgba(0, 0, 0, 0.18);
+}
+
+.avatar--sm {
+  width: 50px;
+  height: 50px;
+  border-radius: 18px;
+}
+
+.avatar--sm::after {
+  width: 34px;
+  height: 34px;
+  font-size: 12px;
+}
+
+.avatar--xs {
+  width: 40px;
+  height: 40px;
+  border-radius: 15px;
+}
+
+.avatar--xs::after {
+  width: 28px;
+  height: 28px;
+  font-size: 11px;
+}
+
+.kakao-logo {
+  width: 54px;
+  height: 54px;
+  border-radius: 20px;
+  background: var(--yellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dark-brown);
+  font-weight: 900;
+  font-size: 13px;
+  letter-spacing: -0.5px;
+  position: relative;
+}
+
+.kakao-logo::before {
+  content: "";
+  width: 36px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--dark-brown);
+  position: absolute;
+}
+
+.kakao-logo::after {
+  content: "TALK";
+  color: var(--yellow);
+  position: relative;
+  z-index: 1;
+  font-size: 9px;
+}

@@ -1,0 +1,57 @@
+.screen-header {
+  height: 72px;
+  padding: 22px var(--screen-side-space) 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.screen-header__title {
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.8px;
+}
+
+.screen-header__icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 25px;
+}
+
+.screen-header__icon-wrap {
+  position: relative;
+  display: flex;
+}
+
+.screen-header__dot {
+  position: absolute;
+  top: -2px;
+  right: -3px;
+}
+
+.alt-header {
+  height: 66px;
+  padding: 18px 18px 0;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: start;
+}
+
+.alt-header__title {
+  text-align: center;
+  font-size: 21px;
+  font-weight: 800;
+}
+
+.alt-header__left,
+.alt-header__right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 28px;
+}
+
+.alt-header__right {
+  justify-content: flex-end;
+}

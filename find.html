@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find - Kakao Clone</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <span>No Service</span>
+          <span>⌁</span>
+        </div>
+        <div class="status-bar__column">21:23</div>
+        <div class="status-bar__column">
+          <span>◉</span>
+          <span>100%</span>
+          <span class="status-bar__battery"></span>
+        </div>
+      </div>
+
+      <header class="screen-header">
+        <h1 class="screen-header__title">Find</h1>
+        <div class="screen-header__icons" aria-label="Find actions">
+          <a href="#" aria-label="Search">⌕</a>
+          <a
+            class="screen-header__icon-wrap"
+            href="settings.html"
+            aria-label="Settings"
+          >
+            ⚙
+            <span class="badge badge--tiny screen-header__dot"></span>
+          </a>
+        </div>
+      </header>
+
+      <main class="main-screen find-screen">
+        <section class="find-icons" aria-label="Find methods">
+          <a class="find-icons__icon" href="#">
+            <span class="find-icons__symbol">▣</span>
+            <span>QR Code</span>
+          </a>
+          <a class="find-icons__icon" href="#">
+            <span class="find-icons__symbol">▤</span>
+            <span>Add by<br />Contacts</span>
+          </a>
+          <a class="find-icons__icon" href="#">
+            <span class="find-icons__symbol">ⓘ</span>
+            <span>Add by ID</span>
+          </a>
+          <a class="find-icons__icon" href="#">
+            <span class="find-icons__symbol">✉</span>
+            <span>Invite</span>
+          </a>
+        </section>
+
+        <h2 class="find-section-title">Recommended Friends</h2>
+        <section class="recommended-friends">
+          You have no recommended friends.
+        </section>
+
+        <section class="open-chat">
+          <div class="open-chat__header">
+            <span>Open Chat</span>
+            <a href="#">Go to Openchat Home ›</a>
+          </div>
+
+          <a class="open-post" href="#">
+            <div class="open-post__column">
+              <h3 class="open-post__title">#BTS</h3>
+              <p class="open-post__hashtags">#BTS#ARMY#FRIENDS</p>
+              <p class="open-post__members">
+                <span>🧑</span>
+                <span>802 members</span>
+                <span>|</span>
+                <span class="open-post__active">Active</span>
+              </p>
+            </div>
+            <div class="open-post__photo open-post__photo--bts">
+              <span class="open-post__likes">♥ 326</span>
+            </div>
+          </a>
+
+          <a class="open-post" href="#">
+            <div class="open-post__column">
+              <h3 class="open-post__title">Study Gang~</h3>
+              <p class="open-post__hashtags">
+                #englishonly #coding #project...
+              </p>
+              <p class="open-post__members">
+                <span>🐣</span>
+                <span>299 members</span>
+                <span>|</span>
+                <span class="open-post__active">Active</span>
+              </p>
+            </div>
+            <div class="open-post__photo open-post__photo--study">
+              <span class="open-post__likes">♥ 215</span>
+            </div>
+          </a>
+        </section>
+      </main>
+
+      <nav class="nav" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li>
+            <a class="nav__link" href="friends.html" aria-label="Friends">♙</a>
+          </li>
+          <li>
+            <a class="nav__link" href="chats.html" aria-label="Chats">
+              ♡
+              <span class="badge nav__notification">1</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="nav__link nav__link--active"
+              href="find.html"
+              aria-label="Find"
+              >⌕</a
+            >
+          </li>
+          <li>
+            <a class="nav__link" href="more.html" aria-label="More">
+              •••
+              <span class="badge badge--tiny nav__dot"></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>

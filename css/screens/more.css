@@ -1,0 +1,105 @@
+.more-screen {
+  padding-top: 10px;
+}
+
+.more-profile {
+  padding-bottom: 14px;
+}
+
+.more-profile__warning {
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid var(--orange);
+  border-radius: 50%;
+  color: var(--orange);
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.more-profile__bubble {
+  font-size: 30px;
+}
+
+.more-icons {
+  padding: 18px 0 26px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 28px;
+  text-align: center;
+  border-bottom: var(--border);
+}
+
+.more-icons__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: var(--gray-700);
+  font-size: 13px;
+  position: relative;
+}
+
+.more-icons__symbol {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  color: var(--black);
+  font-size: 28px;
+}
+
+.more-icons__dot {
+  position: absolute;
+  top: -2px;
+  right: 32%;
+}
+
+.suggestions {
+  padding-top: 22px;
+}
+
+.suggestions__title {
+  margin-bottom: 22px;
+  font-size: 15px;
+  color: var(--gray-900);
+}
+
+.suggestions__icons {
+  display: flex;
+  gap: 32px;
+}
+
+.suggestion {
+  width: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+  color: var(--gray-500);
+  font-size: 13px;
+  text-align: center;
+}
+
+.suggestion__image {
+  width: 45px;
+  height: 45px;
+  border-radius: 9px;
+  background: var(--yellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.suggestion__image--friend {
+  color: var(--dark-brown);
+  border: 1px solid rgba(0, 0, 0, 0.16);
+}
+
+.suggestion__image--gem {
+  background: linear-gradient(135deg, #ff9c2f, #58ce84 55%, #3273ff);
+}

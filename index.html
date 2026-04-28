@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to KakaoTalk</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <span>No Service</span>
+          <span>⌁</span>
+        </div>
+        <div class="status-bar__column">18:43</div>
+        <div class="status-bar__column">
+          <span>◉</span>
+          <span>11%</span>
+          <span class="status-bar__battery status-bar__battery--low"></span>
+          <span>↯</span>
+        </div>
+      </div>
+
+      <main class="login-screen">
+        <header class="login-header">
+          <h1 class="login-header__title">Welcome to KakaoTalk</h1>
+          <p class="login-header__text">
+            If you have a Kakao Account,<br />
+            log in with your email or phone number.
+          </p>
+        </header>
+
+        <form class="login-form" action="friends.html" method="get">
+          <input
+            type="text"
+            placeholder="Email or phone number"
+            aria-label="Email or phone number"
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            aria-label="Password"
+          />
+          <button class="login-form__button" type="submit">Log In</button>
+          <a class="login-form__button" href="friends.html">Sign Up</a>
+          <a class="login-form__find-link" href="friends.html">
+            Find Kakao Account or Password
+          </a>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>

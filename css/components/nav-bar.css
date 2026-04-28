@@ -1,0 +1,46 @@
+.nav {
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: min(100%, var(--app-width));
+  height: var(--nav-height);
+  border-top: var(--border);
+  background: rgba(250, 250, 250, 0.96);
+  z-index: 20;
+}
+
+.nav__list {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav__link {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3a3d42;
+  font-size: 28px;
+  position: relative;
+}
+
+.nav__link--active {
+  color: #111111;
+  font-weight: 800;
+}
+
+.nav__notification {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+}
+
+.nav__dot {
+  position: absolute;
+  top: 8px;
+  right: 9px;
+}

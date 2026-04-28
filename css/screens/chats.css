@@ -1,0 +1,13 @@
+.chats-screen {
+  padding-top: 8px;
+}
+
+.chat-preview {
+  padding: 8px 0 10px;
+}
+
+.chat-preview__time {
+  margin-bottom: 8px;
+  color: var(--gray-500);
+  font-size: 12px;
+}

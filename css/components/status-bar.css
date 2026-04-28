@@ -1,0 +1,57 @@
+.status-bar {
+  height: var(--status-height);
+  padding: 7px 8px 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.status-bar__column {
+  width: 33.333%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.status-bar__column:nth-child(2) {
+  justify-content: center;
+  font-weight: 800;
+}
+
+.status-bar__column:last-child {
+  justify-content: flex-end;
+}
+
+.status-bar__battery {
+  width: 24px;
+  height: 12px;
+  border: 2px solid currentColor;
+  border-radius: 2px;
+  position: relative;
+}
+
+.status-bar__battery::before {
+  content: "";
+  width: 2px;
+  height: 6px;
+  background: currentColor;
+  border-radius: 0 2px 2px 0;
+  position: absolute;
+  right: -5px;
+  top: 1px;
+}
+
+.status-bar__battery::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: currentColor;
+}
+
+.status-bar__battery--low::after {
+  width: 4px;
+  right: auto;
+  background: var(--orange);
+}
